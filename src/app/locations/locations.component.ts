@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {VehicleService} from '../vehicle.service';
+import {IVehicle} from '../vehiclee';
 
 @Component({
   selector: 'app-locations',
@@ -16,6 +17,10 @@ export class LocationsComponent implements OnInit {
 
   ngOnInit(): void {
     this._vehicleService.getVehicles().subscribe(data => this.vehicles = data);
+  }
+
+  onVehicleClick(vehicle: IVehicle){
+    console.log(vehicle);
   }
 
 }
