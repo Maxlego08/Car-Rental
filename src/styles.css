@@ -4,7 +4,7 @@ body {
   font-family: "Roboto Light", serif;
 }
 
-header .top{
+header .top {
   display: block;
   background: #9eadba;
   height: 30px;
@@ -74,4 +74,23 @@ header nav {
   font-size: 1.1em;
   word-break: break-word;
   margin-right: 5px;
+}
+
+.locations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+.location img {
+  width: 100%;
+  height: auto;
 }
