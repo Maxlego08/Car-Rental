@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {VehicleService} from '../vehicle.service';
-import {IVehicle} from '../vehiclee';
 
 @Component({
   selector: 'app-locations',
