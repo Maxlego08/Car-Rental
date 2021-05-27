@@ -88,6 +88,7 @@ header nav {
   width: 150px;
   margin: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .location img {
