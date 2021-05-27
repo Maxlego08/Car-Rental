@@ -88,9 +88,37 @@ header nav {
   width: 150px;
   margin: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .location img {
   width: 100%;
   height: auto;
+}
+
+.location-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.details-img {
+  margin: 0 5px;
+  width: 100%;
+}
+
+.details-img img {
+  width: 100%;
+  height: auto;
+}
+
+.details-description {
+  margin: 0 5px;
+}
+
+.details-button {
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
