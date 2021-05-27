@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {VehicleService} from '../vehicle.service';
+import {IVehicle} from '../vehiclee';
 
 @Component({
   selector: 'app-locations',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationsComponent implements OnInit {
 
-  constructor() { }
+  public vehicles = [];
+
+  // tslint:disable-next-line:variable-name
+  constructor(private _vehicleService: VehicleService) {
+  }
 
   ngOnInit(): void {
+    this._vehicleService.getVehicles().subscribe(data => this.vehicles = data);
   }
 
 }
