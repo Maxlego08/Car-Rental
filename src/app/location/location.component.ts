@@ -17,7 +17,7 @@ export class LocationComponent implements OnInit {
 
   ngOnInit(): void {
     // tslint:disable-next-line:radix
-    const id = parseInt(this.route.snapshot.paramMap.get('id'));
+    const id: number = parseInt(this.route.snapshot.paramMap.get('id'));
     this.vehicleService.getVehicles().subscribe(data => {
       data.forEach(vehicle => {
         if (vehicle.id === id) {
