@@ -1,5 +1,7 @@
 <div class="locations">
-  <div *ngFor="let vehicle of vehicles">
+  <div *ngFor="let vehicle of vehicles"
+       (click)="onVehicleClick(vehicle)"
+  >
     <div class="location">
       <img src="{{ vehicle.urlImg }}" alt="vehicle image">
       <span>Si osculantur puer tuus aut uxorem tuam,</span>

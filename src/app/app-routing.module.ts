@@ -7,11 +7,12 @@ import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'locations', component: LocationsComponent },
+  {path: 'locations/:id', component: LocationComponent},
   { path: 'login', component: LoginComponent }
-];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
