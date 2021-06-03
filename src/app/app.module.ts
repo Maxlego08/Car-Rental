@@ -7,12 +7,14 @@ import {AppComponent} from './app.component';
 import {LocationsComponent} from './locations/locations.component';
 import {HomeComponent} from './home/home.component';
 import {VehicleService} from './vehicle.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LocationsComponent,
     HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
