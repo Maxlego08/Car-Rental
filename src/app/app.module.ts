@@ -18,6 +18,7 @@ import { LocationComponent } from './location/location.component';
     HomeComponent,
     ContactComponent,
     LoginComponent,
+    LocationComponent,
   ],
   imports: [
     BrowserModule,
