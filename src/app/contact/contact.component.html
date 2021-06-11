@@ -1,5 +1,5 @@
-<div>
-    <div>
+<div class="contact">
+    <div class="contact-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </div>
     <fieldset>
@@ -10,20 +10,20 @@
                     <td>
                         <label for="email">E-mail</label>
                     </td>
-                    <td>
+                    <td class="td">
                         <input type="email" id="email" name="email" placeholder="xyz@example.com">
                     </td>
                 </tr>
                 <tr>
                     <td><label for="topic">Sujet</label></td>
-                    <td><input type="text" id="topic" name="topic" placeholder="Location du 21/09"></td>
+                    <td class="td"><input type="text" id="topic" name="topic" placeholder="Location du 21/09"></td>
                 </tr>
                 <tr>
                     <td><label for="message">Message</label></td>
                     <td><textarea placeholder="Bonjour, ..." name="message" id="message"></textarea></td>
                 </tr>
                 <tr>
-                    <td><input type="button" (click)="onContactFormSubmit()" value="Soumettre"></td>
+                    <td><input id="submit" type="button" (click)="onContactFormSubmit()" value="Soumettre"></td>
                 </tr>
             </table>
         </form>
