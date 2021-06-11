@@ -11,17 +11,18 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
-  onContactFormSubmit() {
-    let email = (<HTMLInputElement>document.getElementById("email")).value;
-    ;
-    let topic = (<HTMLInputElement>document.getElementById("topic")).value;
-    ;
-    let message = (<HTMLInputElement>document.getElementById("message")).value;
-    ;
 
-    console.log("From : ", email);
-    console.log("Topic : ", topic);
+  // tslint:disable-next-line:typedef
+  onContactFormSubmit() {
+    const email = (document.getElementById('email') as HTMLInputElement).value;
+
+    const topic = (document.getElementById('topic') as HTMLInputElement).value;
+
+    const message = (document.getElementById('message') as HTMLInputElement).value;
+
+
+    console.log('From : ', email);
+    console.log('Topic : ', topic);
     console.log(message);
   }
 }
