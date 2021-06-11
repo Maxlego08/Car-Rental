@@ -11,12 +11,7 @@ const routes: Routes = [
   {path: 'locations/:id', component: LocationsComponent},
   { path: 'login', component: LoginComponent },
   { path: 'contact', component: ContactComponent }
-<<<<<<< HEAD
 ]
-=======
-]  
-
->>>>>>> develop
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

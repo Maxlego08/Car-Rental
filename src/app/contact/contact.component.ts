@@ -11,8 +11,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-<<<<<<< HEAD
+  
   onContactFormSubmit() {
     let email = (<HTMLInputElement>document.getElementById("email")).value;
     ;
@@ -25,7 +24,4 @@ export class ContactComponent implements OnInit {
     console.log("Topic : ", topic);
     console.log(message);
   }
-
-=======
->>>>>>> develop
 }
